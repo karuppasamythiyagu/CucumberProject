@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="49.174126">
+<testcase classname="To validate the Amezon login functionality" name="To validate the invaild Emaild and invaild password" time="11.835485">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.AmezonStepDefinition.userHasToPassTheInvaildPasswordToPasswordTextBox(AmezonStepDefinition.java:36)&#13;&#10;&#9;at ✽.user has to pass the invaild password to password text box(src/test/resources/Amezon.feature:9)&#13;&#10;"><![CDATA[Given user has to launch the chromebrowser and hit the Amezon url...........passed
+When user has to pass the invaild emailId to userName text box..............passed
+And To click the continue button............................................passed
+And user has to pass the invaild password to password text box..............failed
+And user has to click the sign button.......................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.AmezonStepDefinition.userHasToPassTheInvaildPasswordToPasswordTextBox(AmezonStepDefinition.java:36)
+	at ✽.user has to pass the invaild password to password text box(src/test/resources/Amezon.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate invaild username and invaild password" time="7.786037">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.StepDefinition.user_has_to_click_the_continue_button(StepDefinition.java:48)&#13;&#10;&#9;at ✽.user has to click the continue button(src/test/resources/fb.feature:22)&#13;&#10;"><![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When To pass the invaild user name to username text box.....................passed
+And To pass the invaild password to password text box.......................passed
+And user has to click the continue button...................................failed
+Then user has to close the browser..........................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.StepDefinition.user_has_to_click_the_continue_button(StepDefinition.java:48)
+	at ✽.user has to click the continue button(src/test/resources/fb.feature:22)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate the bulk of datas" time="7.390451">
+<system-out><![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When user has to pass the bulk"karuppasamy1798@gmail.com" of datas to userName field.passed
+And user has to pass the bulk "karuppasamy1798"of datas to password field...passed
+Then user has to close the browser..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate the bulk of datas 2" time="7.493942">
+<system-out><![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When user has to pass the bulk"ajsamy2156@gmail.com" of datas to userName field.passed
+And user has to pass the bulk "ajsamy2156"of datas to password field........passed
+Then user has to close the browser..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate the bulk of datas 3" time="7.289521">
+<system-out><![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When user has to pass the bulk"testng@gmail.com" of datas to userName field.passed
+And user has to pass the bulk "testng"of datas to password field............passed
+Then user has to close the browser..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate the bulk of datas 4" time="7.37869">
+<system-out><![CDATA[Given To launch the chrome browser and hit the facebook url.................passed
+When user has to pass the bulk"cucumber@gmail.com" of datas to userName field.passed
+And user has to pass the bulk "cucumber"of datas to password field..........passed
+Then user has to close the browser..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

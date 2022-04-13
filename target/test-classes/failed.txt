@@ -1,0 +1,2 @@
+src/test/resources/fb.feature:8
+src/test/resources/Amezon.feature:5
